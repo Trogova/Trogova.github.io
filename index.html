@@ -163,21 +163,6 @@
                 <h5 class="fquote-header" style="text-align: center;"><span>Введите свои данные для регистрации</span></h5>
             </div>
             <div class="row">
-            <form id="gsmining-73bpx7">
-                <div>
-                    <h6>Create account</h6>
-                    <input type="hidden" name="uid" value="16045">
-                    <input type="text" name="email" placeholder="Email">
-                    <input type="text" name="nickname" placeholder="Nickname">
-                    <input type="password" name="password" placeholder="Password">
-                    <input type="text" name="phone" placeholder="Phone">
-                    <img src="">
-                    <input type="text" name="captcha_response" placeholder="Code">
-                    <button type="submit">Start mining now</button>
-                </div>
-            </form>
-            <script src="https://gsmining.com/static/_embed/reg/form.js" data-themed="1"></script>
-            </div>
         </div>
     </section>
 
@@ -228,14 +213,6 @@
         });
         $('.js-menu-hamburger').on('click', function() {
             $('.js-menu').toggleClass('open');
-        });
-        $(document).on('click', '.js-lang-tip li', function() {
-            $.post('/i18n/setlang/', {
-                language: $(this).data('lang'),
-                csrfmiddlewaretoken: 'A0uwcQf0irNz4crO4dohEP8Tzu9887xw6xLTrlOljop4dx528pSxMdD00Bd8HofM'
-            }, function() {
-                location.reload(true);
-            });
         });
         tippy('.js-lang', {
             position: 'bottom',
