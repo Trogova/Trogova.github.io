@@ -61,7 +61,7 @@
 	}
 	
 	var img01 = new Image();
-	img01.src = '/static/img/bgg01.png';
+	img01.src = '/img/bgg01.png';
 	
 	function draw(){
 		ak+=0.001;
