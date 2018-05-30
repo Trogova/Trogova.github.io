@@ -424,9 +424,23 @@ footer p {
     background-repeat: no-repeat;
 }
 
+.m_i{
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    padding-bottom: 50px;
+}
+.videos iframe{
+    margin-bottom: 50px;
+}
+
 @media (max-width: 991px){
     #img_rotate{
         display: none;
+    }
+    .videos iframe{
+    margin-bottom: 10px;
+    margin-top: 20px;
     }
 }
 
